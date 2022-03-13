@@ -216,22 +216,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libshowlogo",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libshowlogo.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libsignal",
 	owner: "realme",
 	strip: {
@@ -17004,23 +16988,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.aee@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.aee@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.mediatek.hardware.apuware.utils@1.0",
 	owner: "realme",
 	strip: {
@@ -17548,6 +17515,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "sensors.virtual",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/odm/lib/sensors.virtual.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/sensors.virtual.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vendor.oplus.hardware.appradio@1.0",
 	owner: "realme",
 	strip: {
@@ -17798,6 +17785,18 @@ dex_import {
 }
 
 dex_import {
+	name: "mediatek-ims-extension-plugin",
+	owner: "realme",
+	jars: ["proprietary/framework/mediatek-ims-extension-plugin.jar"],
+}
+
+dex_import {
+	name: "mediatek-ims-legacy",
+	owner: "realme",
+	jars: ["proprietary/framework/mediatek-ims-legacy.jar"],
+}
+
+dex_import {
 	name: "mediatek-telecom-common",
 	owner: "realme",
 	jars: ["proprietary/framework/mediatek-telecom-common.jar"],
@@ -17813,18 +17812,6 @@ dex_import {
 	name: "mediatek-telephony-common",
 	owner: "realme",
 	jars: ["proprietary/framework/mediatek-telephony-common.jar"],
-}
-
-dex_import {
-	name: "mediatek-ims-extension-plugin",
-	owner: "realme",
-	jars: ["proprietary/framework/mediatek-ims-extension-plugin.jar"],
-}
-
-dex_import {
-	name: "mediatek-ims-legacy",
-	owner: "realme",
-	jars: ["proprietary/framework/mediatek-ims-legacy.jar"],
 }
 
 dex_import {
@@ -17934,9 +17921,9 @@ prebuilt_etc_xml {
 }
 
 cc_prebuilt_binary {
-	name: "kpoc_charger",
+	name: "chargeonlymode",
 	owner: "realme",
-	srcs: ["proprietary/bin/kpoc_charger"],
+	srcs: ["proprietary/bin/chargeonlymode"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -17953,54 +17940,6 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
-}
-
-cc_prebuilt_binary {
-	name: "aee_aedv",
-	owner: "realme",
-	srcs: ["proprietary/vendor/bin/aee_aedv"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "aee_aedv64",
-	owner: "realme",
-	srcs: ["proprietary/vendor/bin/aee_aedv64"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "aee_dumpstatev",
-	owner: "realme",
-	srcs: ["proprietary/vendor/bin/aee_dumpstatev"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "aeev",
-	owner: "realme",
-	srcs: ["proprietary/vendor/bin/aeev"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -18442,19 +18381,6 @@ cc_prebuilt_binary {
 	name: "power_native_test_v_1_1",
 	owner: "realme",
 	srcs: ["proprietary/vendor/bin/hw/power_native_test_v_1_1"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vendor.mediatek.hardware.aee@1.0-service",
-	owner: "realme",
-	srcs: ["proprietary/vendor/bin/hw/vendor.mediatek.hardware.aee@1.0-service"],
 	check_elf_files: false,
 	strip: {
 		none: true,
