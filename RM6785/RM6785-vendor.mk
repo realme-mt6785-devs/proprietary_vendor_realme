@@ -128,6 +128,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/realme/RM6785/proprietary/odm/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp-pnscr.conf \
     vendor/realme/RM6785/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    vendor/realme/RM6785/proprietary/odm/etc/wifi/txpowerctrl.cfg:$(TARGET_COPY_OUT_ODM)/etc/wifi/txpowerctrl.cfg \
     vendor/realme/RM6785/proprietary/odm/firmware/aw87339/aw87339_abrcv.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw87339/aw87339_abrcv.bin \
     vendor/realme/RM6785/proprietary/odm/firmware/aw87339/aw87339_drcv.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw87339/aw87339_drcv.bin \
     vendor/realme/RM6785/proprietary/odm/firmware/aw87339/aw87339_kspk.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw87339/aw87339_kspk.bin \
@@ -854,8 +855,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/firmware/tp/20682/LIMIT_NT36672C_NF_TIANMA.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/20682/LIMIT_NT36672C_NF_TIANMA.img \
     vendor/realme/RM6785/proprietary/vendor/firmware/wifi_19661.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi_19661.cfg \
     vendor/realme/RM6785/proprietary/vendor/firmware/wifi_20682.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi_20682.cfg \
-    vendor/realme/RM6785/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
-    vendor/realme/RM6785/proprietary/vendor/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
+    vendor/realme/RM6785/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
 
 PRODUCT_PACKAGES += \
     libem_support_jni \
@@ -1784,6 +1784,7 @@ PRODUCT_PACKAGES += \
     power-mtk-default \
     vendor.mediatek.hardware.dplanner@2.0-service \
     vibrator-mtk-default \
+    ueventd.mtk.rc \
     chargeonlymode \
     vtservice \
     atcid \

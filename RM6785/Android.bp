@@ -17808,6 +17808,14 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
+prebuilt_etc {
+	name: "ueventd.mtk.rc",
+	owner: "realme",
+	src: "proprietary/vendor/etc/ueventd.rc",
+	filename_from_src: true,
+	soc_specific: true,
+}
+
 cc_prebuilt_binary {
 	name: "chargeonlymode",
 	owner: "realme",
