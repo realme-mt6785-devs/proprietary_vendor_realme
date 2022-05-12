@@ -619,7 +619,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow_dsp.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
-    vendor/realme/RM6785/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/realme/RM6785/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/realme/RM6785/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
@@ -1290,6 +1289,7 @@ PRODUCT_PACKAGES += \
     libJpgEncPipe \
     libMcClient \
     libMtkOmxCore \
+    libMtkSpeechEnh \
     libOpenCL \
     libPolarrRender \
     libSonyIMX230PdafLibrary \
@@ -1305,6 +1305,7 @@ PRODUCT_PACKAGES += \
     libWaterMark \
     lib_bsscore \
     lib_iir \
+    lib_speech_enh \
     libaal_cust \
     libaal_key \
     libaal_mtk \
@@ -1516,7 +1517,10 @@ PRODUCT_PACKAGES += \
     libpq_prot \
     librgbwlightsensor \
     libscltm \
+    libsi_sixth \
     libsimaka \
+    libspeech_enh_lib \
+    libspeechparser_vendor \
     libssl-md \
     libssl-ss \
     libstagefrighthw \
@@ -1621,7 +1625,6 @@ PRODUCT_PACKAGES += \
     libmnl \
     libmp4enc_sa.ca7 \
     libmp4enc_xa.ca7 \
-    libsi_sixth \
     libstorage_otp \
     libthermalalgo \
     libvc1dec_sa.ca7 \
