@@ -7,7 +7,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.vtservice.rc \
-    vendor/realme/RM6785/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/realme/RM6785/proprietary/product/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/realme/RM6785/proprietary/odm/etc/audio/audio_device/audio_device.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_device/audio_device.xml \
     vendor/realme/RM6785/proprietary/odm/etc/audio/audio_device/common/audio_device.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_device/common/audio_device.xml \
     vendor/realme/RM6785/proprietary/odm/etc/audio/audio_param/AudioParamOptions.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_param/AudioParamOptions.xml \
@@ -128,7 +128,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/realme/RM6785/proprietary/odm/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp-pnscr.conf \
     vendor/realme/RM6785/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    vendor/realme/RM6785/proprietary/odm/etc/wifi/txpowerctrl.cfg:$(TARGET_COPY_OUT_ODM)/etc/wifi/txpowerctrl.cfg \
     vendor/realme/RM6785/proprietary/odm/firmware/aw87339/aw87339_abrcv.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw87339/aw87339_abrcv.bin \
     vendor/realme/RM6785/proprietary/odm/firmware/aw87339/aw87339_drcv.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw87339/aw87339_drcv.bin \
     vendor/realme/RM6785/proprietary/odm/firmware/aw87339/aw87339_kspk.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw87339/aw87339_kspk.bin \
@@ -214,6 +213,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/app/mcRegistry/9073f03a9618383bb1856eb3f990babd.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/9073f03a9618383bb1856eb3f990babd.tlbin \
     vendor/realme/RM6785/proprietary/vendor/app/mcRegistry/98fb95bcb4bf42d26473eae48690d7ea.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/98fb95bcb4bf42d26473eae48690d7ea.tabin \
     vendor/realme/RM6785/proprietary/vendor/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin \
+    vendor/realme/RM6785/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
     vendor/realme/RM6785/proprietary/vendor/etc/.tp/.ht120.mtc:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.ht120.mtc \
     vendor/realme/RM6785/proprietary/vendor/etc/.tp/.thermal_policy_08:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_08 \
     vendor/realme/RM6785/proprietary/vendor/etc/.tp/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
@@ -532,7 +532,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/hw/init.connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.connectivity.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/hw/init.modem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.modem.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/hw/init.mt6785.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mt6785.rc \
@@ -586,7 +585,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/vibrator-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-default.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vpud.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
@@ -852,9 +850,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/firmware/tp/20682/FW_NT36672C_NF_TIANMA_TEST.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/20682/FW_NT36672C_NF_TIANMA_TEST.bin \
     vendor/realme/RM6785/proprietary/vendor/firmware/tp/20682/LIMIT_NT36672C_NF_JDI.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/20682/LIMIT_NT36672C_NF_JDI.img \
     vendor/realme/RM6785/proprietary/vendor/firmware/tp/20682/LIMIT_NT36672C_NF_TIANMA.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/20682/LIMIT_NT36672C_NF_TIANMA.img \
-    vendor/realme/RM6785/proprietary/vendor/firmware/wifi_19661.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi_19661.cfg \
-    vendor/realme/RM6785/proprietary/vendor/firmware/wifi_20682.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi_20682.cfg \
-    vendor/realme/RM6785/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
+    vendor/realme/RM6785/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
+    vendor/realme/RM6785/proprietary/vendor/lib/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwpa_client.so \
+    vendor/realme/RM6785/proprietary/vendor/lib64/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwpa_client.so
 
 PRODUCT_PACKAGES += \
     libem_support_jni \
@@ -1547,7 +1545,6 @@ PRODUCT_PACKAGES += \
     libwapi \
     libwebrtc_audio_preprocessing \
     libwo \
-    libwpa_client \
     libwvhidl \
     libwvdrmengine \
     ov02b10_mipi_raw_IdxMgr \
@@ -1640,7 +1637,6 @@ PRODUCT_PACKAGES += \
     libstagefright_omx.mtk \
     APUWareUtilsServer \
     APUWareXrpServer \
-    android.hardware.power-service-mediatek \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
     hwcomposer.mt6785 \
@@ -1713,6 +1709,7 @@ PRODUCT_PACKAGES += \
     libratconfig \
     librilfusion \
     libsensor_custom \
+    libutils-v32 \
     libwifi-hal-mtk \
     libwifitest \
     libmtkcam_streaminfo_plugin-p1stt \
@@ -1732,7 +1729,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mdmonitor@1.0 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.pplagent@1.0 \
-    vendor.mediatek.hardware.wifi.hostapd@2.0 \
     vendor.mediatek.hardware.wifi.supplicant@2.0 \
     vendor.mediatek.hardware.wifi.supplicant@2.1 \
     vendor.mediatek.hardware.wifi.supplicant@2.2 \
@@ -1779,16 +1775,12 @@ PRODUCT_PACKAGES += \
     com.android.hotwordenrollment.common.util \
     android.hardware.gpu@1.0-service \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu \
-    android.hardware.wifi.hostapd \
     manifest \
     manifest_android.hardware.drm@1.3-service.widevine \
     oplus_appradio_device_manifest \
     oplus_radio_device_manifest \
-    power-mtk-default \
     vendor.mediatek.hardware.dplanner@2.0-service \
-    vibrator-mtk-default \
     ueventd.mtk.rc \
-    chargeonlymode \
     vtservice \
     atcid \
     audiocmdservice_atci \
@@ -1809,7 +1801,6 @@ PRODUCT_PACKAGES += \
     fuelgauged \
     fuelgauged_nvram \
     gsm0710muxd \
-    hostapd_cli \
     android.hardware.bluetooth@1.0-service-mediatek \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.gnss@2.1-service-mediatek \
@@ -1820,9 +1811,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service-mediatek \
     android.hardware.thermal@2.0-service.mtk \
     android.hardware.usb@1.1-service-mediatek \
-    android.hardware.vibrator-service.mediatek \
     camerahalserver \
-    hostapd \
     mtkfusionrild \
     vendor.mediatek.hardware.dfps@1.0-service \
     vendor.mediatek.hardware.dplanner@2.0-service \
@@ -1836,7 +1825,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.trustonic.tee@1.1-service \
     vtservice_hidl \
-    wpa_supplicant \
     ipsec_mon \
     jpegtool \
     lbs_hidl_service \
@@ -1884,6 +1872,5 @@ PRODUCT_PACKAGES += \
     wlan_assistant \
     wmt_launcher \
     wmt_loader \
-    wpa_cli \
     xcap \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service
