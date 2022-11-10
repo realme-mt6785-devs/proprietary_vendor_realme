@@ -495,7 +495,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/factory.ini:$(TARGET_COPY_OUT_VENDOR)/etc/factory.ini \
     vendor/realme/RM6785/proprietary/vendor/etc/file112.wav:$(TARGET_COPY_OUT_VENDOR)/etc/file112.wav \
-    vendor/realme/RM6785/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
     vendor/realme/RM6785/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
@@ -571,8 +570,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
@@ -606,8 +603,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
     vendor/realme/RM6785/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow_dsp.xml \
-    vendor/realme/RM6785/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
-    vendor/realme/RM6785/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/realme/RM6785/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/realme/RM6785/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
@@ -823,7 +818,6 @@ PRODUCT_PACKAGES += \
     libem_support_jni \
     libmtk_vt_wrapper \
     libmtkavenhancements \
-    libmtkperf_client \
     libvcodec_cap \
     libvcodec_capenc \
     libvsim-adaptor-client \
@@ -846,12 +840,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0-impl-mediatek \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
     gps.default \
-    power.default \
-    power.mt6785 \
     vendor.mediatek.hardware.keyinstall@1.0-impl \
     vendor.mediatek.hardware.mms@1.5-impl \
-    vendor.mediatek.hardware.mtkpower@1.1-impl \
-    vendor.mediatek.hardware.mtkpower@1.2-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.pq@2.6-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
@@ -890,7 +880,6 @@ PRODUCT_PACKAGES += \
     libmtkcutils \
     libmtkhardware_legacy \
     libmtknetutils \
-    libmtkperf_client_vendor \
     libmtkproperty \
     libmtkrillog \
     libmtksysutils \
@@ -898,11 +887,7 @@ PRODUCT_PACKAGES += \
     libnvram_daemon_callback \
     libnvram_platform \
     libnvram_sec \
-    libperfctl_vendor \
     libpixelflinger \
-    libpower_timer \
-    libpowerhal \
-    libpowerhalwrap_vendor \
     libpq_cust_base \
     libpq_prot \
     librgbwlightsensor \
@@ -917,7 +902,6 @@ PRODUCT_PACKAGES += \
     libvpu \
     libwo \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.gpu@1.0 \
     vendor.mediatek.hardware.keyinstall@1.0 \
     vendor.mediatek.hardware.mms@1.0 \
@@ -926,14 +910,9 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.3 \
     vendor.mediatek.hardware.mms@1.4 \
     vendor.mediatek.hardware.mms@1.5 \
-    vendor.mediatek.hardware.mtkpower@1.0 \
-    vendor.mediatek.hardware.mtkpower@1.1 \
-    vendor.mediatek.hardware.mtkpower@1.2 \
     vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
-    vendor.mediatek.hardware.power@1.1 \
-    vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.pq@2.0 \
     vendor.mediatek.hardware.pq@2.1 \
     vendor.mediatek.hardware.pq@2.2 \
@@ -1690,6 +1669,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.lbs@1.0 \
     vendor.mediatek.hardware.mdmonitor@1.0 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
+    vendor.mediatek.hardware.power@1.1 \
+    vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.pplagent@1.0 \
     vendor.mediatek.hardware.wifi.supplicant@2.0 \
     vendor.mediatek.hardware.wifi.supplicant@2.1 \
@@ -1781,7 +1762,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service \
     vendor.mediatek.hardware.mms@1.5-service \
     vendor.mediatek.hardware.mtkcodecservice@1.1-service \
-    vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.trustonic.tee@1.1-service \
