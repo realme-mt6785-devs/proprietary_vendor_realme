@@ -1011,7 +1011,6 @@ PRODUCT_PACKAGES += \
     libaudiopreprocessing_mtk \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.mtkcodecservice@1.1 \
-    libstagefright_omx.mtk \
     APUWareUtilsServer \
     APUWareXrpServer \
     gc02k0_mipi_raw_IdxMgr \
