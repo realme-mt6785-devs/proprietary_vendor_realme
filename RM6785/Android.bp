@@ -3516,23 +3516,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libwebrtc_audio_preprocessing",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libwebrtc_audio_preprocessing.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libwvhidl",
 	owner: "realme",
 	strip: {
@@ -3563,24 +3546,6 @@ cc_prebuilt_library_shared {
 	compile_multilib: "32",
 	check_elf_files: false,
 	relative_install_path: "mediadrm",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libaudiopreprocessing_mtk",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/soundfx/libaudiopreprocessing_mtk.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	relative_install_path: "soundfx",
 	prefer: true,
 	soc_specific: true,
 }
@@ -15000,228 +14965,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libormshalclient",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/libormshalclient.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/libormshalclient.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libpnscr2",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/libpnscr2.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/libpnscr2.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.appradio@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/vendor.oplus.hardware.appradio@1.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.commondcs@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/vendor.oplus.hardware.commondcs@1.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.commondcs@1.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.orms@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/vendor.oplus.hardware.orms@1.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.radio@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/vendor.oplus.hardware.radio@1.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.radio@1.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libavcodec",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/libavcodec.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libavformat",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/libavformat.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libavutil",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/libavutil.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libdav1d.so",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/libdav1d.so.4"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libffmpeg_omx",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/libffmpeg_omx.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libffmpeg_utils",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/libffmpeg_utils.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "liboemcrypto",
 	owner: "realme",
 	strip: {
@@ -15239,104 +14982,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libpn553_fw",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/libpn553_fw.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libpn557_fw",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/libpn557_fw.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsn100u_fw",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/libsn100u_fw.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libswresample",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/libswresample.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libswscale",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/odm/lib/libswscale.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.camera.slogan@1.0-impl",
+	name: "libormshalclient",
 	owner: "realme",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/odm/lib64/hw/vendor.oplus.hardware.camera.slogan@1.0-impl.so"],
+			srcs: ["proprietary/odm/lib64/libormshalclient.so"],
 		},
 	},
 	compile_multilib: "64",
 	check_elf_files: false,
-	relative_install_path: "hw",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libpnscr2",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libpnscr2.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	device_specific: true,
 }
@@ -15350,6 +15024,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/sensors.virtual.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.appradio@1.0",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -15394,14 +15085,48 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.camera.slogan@1.0",
+	name: "vendor.oplus.hardware.commondcs@1.0",
 	owner: "realme",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.camera.slogan@1.0.so"],
+			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.commondcs@1.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.orms@1.0",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.radio@1.0",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.radio@1.0.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -15815,8 +15540,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -15828,8 +15553,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -15841,8 +15566,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -15854,8 +15579,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -15867,8 +15592,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -15880,8 +15605,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -15893,8 +15618,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -15906,8 +15631,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -15919,8 +15644,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -15932,8 +15657,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -15945,8 +15670,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -15958,8 +15683,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -15971,8 +15696,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -15984,8 +15709,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -15997,8 +15722,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -16010,8 +15735,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -16023,8 +15748,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -16036,8 +15761,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -16049,8 +15774,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -16062,8 +15787,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -16075,8 +15800,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -16088,8 +15813,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -16101,8 +15826,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -16114,8 +15839,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -16499,8 +16224,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	device_specific: true,
 }
 

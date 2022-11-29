@@ -120,9 +120,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/odm/etc/audio/spk.wav:$(TARGET_COPY_OUT_ODM)/etc/audio/spk.wav \
     vendor/realme/RM6785/proprietary/odm/etc/audio/test_path/common/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/test_path/common/mixer_paths.xml \
     vendor/realme/RM6785/proprietary/odm/etc/audio/test_path/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/test_path/mixer_paths.xml \
-    vendor/realme/RM6785/proprietary/odm/etc/audio_effects.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_effects.xml \
-    vendor/realme/RM6785/proprietary/odm/etc/dirac/diracmobile.config:$(TARGET_COPY_OUT_ODM)/etc/dirac/diracmobile.config \
-    vendor/realme/RM6785/proprietary/odm/etc/dirac/diracvdd.bin:$(TARGET_COPY_OUT_ODM)/etc/dirac/diracvdd.bin \
     vendor/realme/RM6785/proprietary/odm/etc/init/init.pn8x.nfc.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.pn8x.nfc.rc \
     vendor/realme/RM6785/proprietary/odm/etc/init/init.pn8x.se.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.pn8x.se.rc \
     vendor/realme/RM6785/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
@@ -222,7 +219,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2044_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2044_ENUM \
     vendor/realme/RM6785/proprietary/vendor/etc/armnn_app.config:$(TARGET_COPY_OUT_VENDOR)/etc/armnn_app.config \
     vendor/realme/RM6785/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
-    vendor/realme/RM6785/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/audio_em.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_em.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/audio_param/AudioParamOptions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/audio_param/BtInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_AudioParam.xml \
@@ -323,7 +319,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
-    vendor/realme/RM6785/proprietary/vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/aurisys_config_hifi3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_hifi3.xml \
@@ -483,7 +478,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/camera/gasryuv.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gasryuv.model \
     vendor/realme/RM6785/proprietary/vendor/etc/camera/merged_model_post:$(TARGET_COPY_OUT_VENDOR)/etc/camera/merged_model_post \
     vendor/realme/RM6785/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/ecc_list_OP02.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP02.xml \
@@ -601,8 +595,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/realme/RM6785/proprietary/vendor/etc/ncf_pack.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/ncf_pack.ncf \
     vendor/realme/RM6785/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
-    vendor/realme/RM6785/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.xml \
-    vendor/realme/RM6785/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow_dsp.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/realme/RM6785/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/realme/RM6785/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
@@ -776,8 +768,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/spk.wav:$(TARGET_COPY_OUT_VENDOR)/etc/spk.wav \
     vendor/realme/RM6785/proprietary/vendor/etc/spn-conf-op09.xml:$(TARGET_COPY_OUT_VENDOR)/etc/spn-conf-op09.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/test_path/common/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/test_path/common/mixer_paths.xml \
-    vendor/realme/RM6785/proprietary/vendor/etc/test_path/oppo6779_19537/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/test_path/oppo6779_19537/mixer_paths.xml \
-    vendor/realme/RM6785/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
@@ -1005,10 +995,8 @@ PRODUCT_PACKAGES += \
     libvp9dec_sa.ca7 \
     libvpud_vcodec \
     libvt_custom \
-    libwebrtc_audio_preprocessing \
     libwvhidl \
     libwvdrmengine \
-    libaudiopreprocessing_mtk \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.mtkcodecservice@1.1 \
     APUWareUtilsServer \
@@ -1679,29 +1667,16 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
     vendor.mediatek.hardware.videotelephony@1.0.system_ext \
+    liboemcrypto \
     libormshalclient \
     libpnscr2 \
+    sensors.virtual \
     vendor.oplus.hardware.appradio@1.0 \
+    vendor.oplus.hardware.biometrics.fingerprint@2.1.odm \
+    vendor.oplus.hardware.biometrics.fingerprintservice@1.0 \
     vendor.oplus.hardware.commondcs@1.0 \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.radio@1.0 \
-    libavcodec \
-    libavformat \
-    libavutil \
-    libdav1d.so \
-    libffmpeg_omx \
-    libffmpeg_utils \
-    liboemcrypto \
-    libpn553_fw \
-    libpn557_fw \
-    libsn100u_fw \
-    libswresample \
-    libswscale \
-    vendor.oplus.hardware.camera.slogan@1.0-impl \
-    sensors.virtual \
-    vendor.oplus.hardware.biometrics.fingerprint@2.1.odm \
-    vendor.oplus.hardware.biometrics.fingerprintservice@1.0 \
-    vendor.oplus.hardware.camera.slogan@1.0 \
     EngineerMode \
     ImsService \
     HotwordEnrollmentOKGoogleCORTEXM4 \
