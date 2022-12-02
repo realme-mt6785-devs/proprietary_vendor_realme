@@ -336,94 +336,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/camera/faceBeautyParam/fb_default:$(TARGET_COPY_OUT_VENDOR)/etc/camera/faceBeautyParam/fb_default \
     vendor/realme/RM6785/proprietary/vendor/etc/camera/faceBeautyParam/fb_default_19661:$(TARGET_COPY_OUT_VENDOR)/etc/camera/faceBeautyParam/fb_default_19661 \
     vendor/realme/RM6785/proprietary/vendor/etc/camera/faceBeautyParam/fb_default_20682:$(TARGET_COPY_OUT_VENDOR)/etc/camera/faceBeautyParam/fb_default_20682 \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/000.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/000.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/000_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/000_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/000_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/000_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/001.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/001.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/001_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/001_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/001_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/001_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/002.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/002.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/002_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/002_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/002_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/002_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/003.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/003.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/003_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/003_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/003_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/003_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/010.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/010.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/010_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/010_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/010_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/010_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/011.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/011.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/011_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/011_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/011_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/011_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/012.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/012.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/012_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/012_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/012_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/012_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/013.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/013.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/013_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/013_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/100.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/100.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/100_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/100_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/100_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/100_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/101.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/101.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/101_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/101_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/101_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/101_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/102.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/102.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/102_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/102_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/102_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/102_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/103.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/103.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/103_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/103_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/103_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/103_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/110.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/110.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/110_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/110_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/110_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/110_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/111.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/111.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/111_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/111_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/111_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/111_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/112.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/112.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/112_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/112_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/112_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/112_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/113.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/113.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/113_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/113_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/200.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/200.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/200_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/200_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/200_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/200_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/201.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/201.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/201_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/201_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/201_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/201_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/202.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/202.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/202_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/202_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/202_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/202_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/203.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/203.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/203_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/203_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/203_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/203_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/210.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/210.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/210_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/210_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/210_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/210_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/211.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/211.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/211_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/211_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/211_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/211_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/212.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/212.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/212_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/212_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/212_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/212_pre.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/213.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/213.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/213_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/213_pre.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreCalVarBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreCalVarBinary.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreHighPassBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreHighPassBinary.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreHoriFilterBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreHoriFilterBinary.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreMakeupBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreMakeupBinary.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreMorphBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreMorphBinary.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreNoFaceBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreNoFaceBinary.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreNormalBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreNormalBinary.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreOnlywhitenBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreOnlywhitenBinary.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreSkintuneBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreSkintuneBinary.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreSurfaceBlurBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreSurfaceBlurBinary.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreVertFilterBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreVertFilterBinary.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/eyeBright.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/eyeBright.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/skin_CCT.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_CCT.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/skin_back.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_back.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/skin_dark.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_dark.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/skin_indian.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_indian.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/skin_normal.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_normal.png \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/skinmask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinmask.bin \
-    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/skinmask.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinmask.png \
     vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/B1VLf4peM:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/B1VLf4peM \
     vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/B1aMqioxf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/B1aMqioxf \
     vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/B1nmcmWbG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/B1nmcmWbG \
@@ -496,7 +408,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/factory.ini:$(TARGET_COPY_OUT_VENDOR)/etc/factory.ini \
     vendor/realme/RM6785/proprietary/vendor/etc/file112.wav:$(TARGET_COPY_OUT_VENDOR)/etc/file112.wav \
-    vendor/realme/RM6785/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
     vendor/realme/RM6785/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
@@ -581,12 +492,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/vibrator-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-default.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vpud.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
@@ -617,8 +525,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
     vendor/realme/RM6785/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow_dsp.xml \
-    vendor/realme/RM6785/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
-    vendor/realme/RM6785/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/realme/RM6785/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/realme/RM6785/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
@@ -864,6 +770,7 @@ PRODUCT_PACKAGES += \
     libmtkavenhancements \
     libvcodec_cap \
     libvcodec_capenc \
+    libvsim-adaptor-client \
     libcomutils \
     libimsma \
     libimsma_adapt \
@@ -902,8 +809,6 @@ PRODUCT_PACKAGES += \
     libSoftGatekeeper \
     lights.mt6785 \
     memtrack.mt6785 \
-    power.default \
-    power.mt6785 \
     sound_trigger.primary.mt6785 \
     thermal.mt6785 \
     vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
@@ -916,8 +821,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
     vendor.mediatek.hardware.mms@1.5-impl \
     vendor.mediatek.hardware.mtkcodecservice@1.1-impl \
-    vendor.mediatek.hardware.mtkpower@1.1-impl \
-    vendor.mediatek.hardware.mtkpower@1.2-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.pq@2.6-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
@@ -1489,7 +1392,6 @@ PRODUCT_PACKAGES += \
     libmtkisp_metadata \
     libmtklimiter_vendor \
     libmtknetutils \
-    libmtkperf_client_vendor \
     libmtkproperty \
     libmtkrillog \
     libmtkshifter_vendor \
@@ -1509,11 +1411,7 @@ PRODUCT_PACKAGES += \
     liboplus_audio_config \
     liboppo_arcSoftBokehEngine_new \
     liboppo_platform_hwi \
-    libperfctl_vendor \
     libpixelflinger \
-    libpower_timer \
-    libpowerhal \
-    libpowerhalwrap_vendor \
     libpq_cust_base \
     libpq_prot \
     librgbwlightsensor \
@@ -1572,7 +1470,6 @@ PRODUCT_PACKAGES += \
     libaudiopreprocessing_mtk \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
@@ -1591,9 +1488,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.4 \
     vendor.mediatek.hardware.mms@1.5 \
     vendor.mediatek.hardware.mtkcodecservice@1.1 \
-    vendor.mediatek.hardware.mtkpower@1.0 \
-    vendor.mediatek.hardware.mtkpower@1.1 \
-    vendor.mediatek.hardware.mtkpower@1.2 \
     vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
@@ -1638,10 +1532,8 @@ PRODUCT_PACKAGES += \
     libvp9dec_sa.ca7 \
     libvpud_vcodec \
     libvt_custom \
-    libstagefright_omx.mtk \
     APUWareUtilsServer \
     APUWareXrpServer \
-    android.hardware.power-service-mediatek \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
     hwcomposer.mt6785 \
@@ -1785,9 +1677,7 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine \
     oplus_appradio_device_manifest \
     oplus_radio_device_manifest \
-    power-mtk-default \
     vendor.mediatek.hardware.dplanner@2.0-service \
-    vibrator-mtk-default \
     ueventd.mtk.rc \
     chargeonlymode \
     vtservice \
@@ -1821,7 +1711,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service-mediatek \
     android.hardware.thermal@2.0-service.mtk \
     android.hardware.usb@1.1-service-mediatek \
-    android.hardware.vibrator-service.mediatek \
     camerahalserver \
     hostapd \
     mtkfusionrild \
@@ -1832,7 +1721,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service \
     vendor.mediatek.hardware.mms@1.5-service \
     vendor.mediatek.hardware.mtkcodecservice@1.1-service \
-    vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.trustonic.tee@1.1-service \
