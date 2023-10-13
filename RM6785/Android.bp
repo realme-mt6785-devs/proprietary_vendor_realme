@@ -760,6 +760,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libconnfem",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libconnfem.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libconnfem.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libcrypto-md",
 	owner: "realme",
 	strip: {
@@ -1531,46 +1551,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libnvram.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libnvram_daemon_callback",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libnvram_daemon_callback.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libnvram_daemon_callback.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libnvram_platform",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libnvram_platform.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libnvram_platform.so"],
 		},
 	},
 	compile_multilib: "both",
