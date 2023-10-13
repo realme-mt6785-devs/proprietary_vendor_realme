@@ -1,6 +1,10 @@
 on post-fs-data
     # create ims db node
     mkdir /data/vendor/radio 0771 radio radio
+    chown radio radio /sys/kernel/oplus_display/mipi_hopping
+    chmod 0666 /sys/kernel/oplus_display/mipi_hopping
+    chown radio radio /sys/kernel/oplus_display/osc
+    chmod 0666 /sys/kernel/oplus_display/osc
 
 service vendor.ril-daemon-mtk /vendor/bin/hw/mtkfusionrild -l libmtk-ril.so
     class main
@@ -15,6 +19,12 @@ service vendor.ril-daemon-mtk /vendor/bin/hw/mtkfusionrild -l libmtk-ril.so
     disabled
 
 on property:vendor.ril.mtk=1
+    start vendor.ril-daemon-mtk
+
+on property:vendor.ril.mtk.restart=1
+    restart vendor.ril-daemon-mtk
+
+on property:ro.vendor.mtk_mipc_support=1
     start vendor.ril-daemon-mtk
 
 on property:vold.decrypt=trigger_restart_framework

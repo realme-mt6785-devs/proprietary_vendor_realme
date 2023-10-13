@@ -82,25 +82,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libvcodec_capenc",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libvcodec_capenc.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/lib64/libvcodec_capenc.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libvsim-adaptor-client",
 	owner: "realme",
 	strip: {
@@ -288,6 +269,22 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/lib64/libsource.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libvcodec_capenc",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libvcodec_capenc.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -558,6 +555,26 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	check_elf_files: false,
 	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libDR",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libDR.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libDR.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -834,6 +851,26 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcustom_nvram.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcvsd_mtk",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libcvsd_mtk.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libcvsd_mtk.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -1143,6 +1180,106 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "liblpcnr",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/liblpcnr.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/liblpcnr.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmnetlink_v104",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libmnetlink_v104.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmnetlink_v104.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmnl",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libmnl.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmnl.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmsbc_mtk",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libmsbc_mtk.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmsbc_mtk.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmsnr",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libmsnr.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmsnr.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libmtcloader",
 	owner: "realme",
 	strip: {
@@ -1243,6 +1380,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libmtklimiter_vendor",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libmtklimiter_vendor.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmtklimiter_vendor.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libmtknetutils",
 	owner: "realme",
 	strip: {
@@ -1294,6 +1451,46 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmtkrillog.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmtkshifter_vendor",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libmtkshifter_vendor.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmtkshifter_vendor.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmtkspparser",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libmtkspparser.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmtkspparser.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -1523,6 +1720,46 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libsimlock",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsimlock.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsimlock.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsimmelock",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsimmelock.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsimmelock.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libssl-md",
 	owner: "realme",
 	strip: {
@@ -1603,6 +1840,66 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libtranslator_mapi_v3.0",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libtranslator_mapi_v3.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libtranslator_mapi_v3.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libtranslator_mdmi_v2.8.2",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libtranslator_mdmi_v2.8.2.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libtranslator_mdmi_v2.8.2.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libtranslator_utils",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libtranslator_utils.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libtranslator_utils.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "liburee_meta_drmkeyinstall",
 	owner: "realme",
 	strip: {
@@ -1654,26 +1951,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libvpu.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libwo",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libwo.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libwo.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -1854,26 +2131,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.5.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.netdagent@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -2202,23 +2459,6 @@ cc_prebuilt_library_shared {
 	compile_multilib: "32",
 	check_elf_files: false,
 	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libDR",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libDR.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -2717,23 +2957,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libcvsd_mtk",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libcvsd_mtk.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libfgauge_gm30",
 	owner: "realme",
 	strip: {
@@ -2989,23 +3212,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmnl",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmnl.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libmp4enc_sa.ca7",
 	owner: "realme",
 	strip: {
@@ -3040,57 +3246,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmsbc_mtk",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmsbc_mtk.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmtklimiter_vendor",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmtklimiter_vendor.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmtkshifter_vendor",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmtkshifter_vendor.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "liboplus_audio_config",
 	owner: "realme",
 	strip: {
@@ -3099,6 +3254,40 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/liboplus_audio_config.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "librcs_interface",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/librcs_interface.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "librcs_volte_core",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/librcs_volte_core.so"],
 		},
 	},
 	compile_multilib: "32",
@@ -3167,23 +3356,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libstagefrighthw.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libstorage_otp",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libstorage_otp.so"],
 		},
 	},
 	compile_multilib: "32",
@@ -3576,6 +3748,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/vendor.mediatek.hardware.mtkcodecservice@1.1.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.rcs@2.0",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.mediatek.hardware.rcs@2.0.so"],
 		},
 	},
 	compile_multilib: "32",
@@ -12325,14 +12514,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "liblpcnr",
+	name: "libmfllcore",
 	owner: "realme",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblpcnr.so"],
+			srcs: ["proprietary/vendor/lib64/libmfllcore.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -12342,14 +12531,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmfllcore",
+	name: "libmipc",
 	owner: "realme",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libmfllcore.so"],
+			srcs: ["proprietary/vendor/lib64/libmipc.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -12376,6 +12565,40 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libmmagent",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmmagent.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmmprofile",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmmprofile.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libmpbase",
 	owner: "realme",
 	strip: {
@@ -12393,14 +12616,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmsnr",
+	name: "libmtk-fusion-ril-prop-vsim",
 	owner: "realme",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libmsnr.so"],
+			srcs: ["proprietary/vendor/lib64/libmtk-fusion-ril-prop-vsim.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -13549,14 +13772,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmtkrilutils",
+	name: "libmtkmipc-ril",
 	owner: "realme",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libmtkrilutils.so"],
+			srcs: ["proprietary/vendor/lib64/libmtkmipc-ril.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -13566,14 +13789,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmtktinyxml",
+	name: "libmtknetcap",
 	owner: "realme",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libmtktinyxml.so"],
+			srcs: ["proprietary/vendor/lib64/libmtknetcap.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmtkrilutils",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmtkrilutils.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -13940,6 +14180,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libstorage_otp",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libstorage_otp.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libtflite_mtk",
 	owner: "realme",
 	strip: {
@@ -13982,6 +14239,40 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libudf.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libvia-ril",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libvia-ril.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libviamipc-ril",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libviamipc-ril.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -14050,6 +14341,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libwpa_client.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libwpfa",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libwpfa.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -14587,6 +14895,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.clientapi@1.0",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vendor.mediatek.hardware.dfps@1.0",
 	owner: "realme",
 	strip: {
@@ -14740,14 +15065,48 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.mdmonitor@1.0",
+	name: "vendor.mediatek.hardware.log@1.0",
 	owner: "realme",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so"],
+			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.log@1.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.mmagent@1.0",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.mmagent@1.1",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -14765,6 +15124,40 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.mtkradioex@3.0",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.netdagent@1.0",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -14799,23 +15192,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.power@2.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.pplagent@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.pplagent@1.0.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -14965,6 +15341,86 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.appradio@1.0",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/odm/lib/vendor.oplus.hardware.appradio@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.ims@1.0",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/odm/lib/vendor.oplus.hardware.ims@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.ims@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.mtkmodemaci@1.0",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/odm/lib/vendor.oplus.hardware.mtkmodemaci@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.mtkmodemaci@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.radio@1.0",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/odm/lib/vendor.oplus.hardware.radio@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.radio@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "liboemcrypto",
 	owner: "realme",
 	strip: {
@@ -15024,23 +15480,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/sensors.virtual.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.appradio@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -15118,38 +15557,10 @@ cc_prebuilt_library_shared {
 	device_specific: true,
 }
 
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.radio@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.radio@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
 android_app_import {
 	name: "EngineerMode",
 	owner: "realme",
 	apk: "proprietary/priv-app/EngineerMode/EngineerMode.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "ImsService",
-	owner: "realme",
-	apk: "proprietary/priv-app/ImsService/ImsService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -15179,6 +15590,18 @@ dex_import {
 	name: "mediatek-framework",
 	owner: "realme",
 	jars: ["proprietary/framework/mediatek-framework.jar"],
+}
+
+dex_import {
+	name: "mediatek-gwsd",
+	owner: "realme",
+	jars: ["proprietary/framework/mediatek-gwsd.jar"],
+}
+
+dex_import {
+	name: "mediatek-gwsdv2",
+	owner: "realme",
+	jars: ["proprietary/framework/mediatek-gwsdv2.jar"],
 }
 
 dex_import {
@@ -15224,6 +15647,24 @@ dex_import {
 }
 
 dex_import {
+	name: "mediatek-wfo-legacy",
+	owner: "realme",
+	jars: ["proprietary/framework/mediatek-wfo-legacy.jar"],
+}
+
+dex_import {
+	name: "oplus-framework-telephony",
+	owner: "realme",
+	jars: ["proprietary/framework/oplus-framework-telephony.jar"],
+}
+
+dex_import {
+	name: "oplus-framework",
+	owner: "realme",
+	jars: ["proprietary/framework/oplus-framework.jar"],
+}
+
+dex_import {
 	name: "com.android.hotwordenrollment.common.util",
 	owner: "realme",
 	jars: ["proprietary/product/framework/com.android.hotwordenrollment.common.util.jar"],
@@ -15249,6 +15690,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "lbs_hidl_service@1.0",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "manifest",
 	owner: "realme",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest.xml",
@@ -15261,24 +15711,6 @@ prebuilt_etc_xml {
 	name: "manifest_android.hardware.drm@1.3-service.widevine",
 	owner: "realme",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "oplus_appradio_device_manifest",
-	owner: "realme",
-	src: "proprietary/vendor/etc/vintf/manifest/oplus_appradio_device_manifest.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "oplus_radio_device_manifest",
-	owner: "realme",
-	src: "proprietary/vendor/etc/vintf/manifest/oplus_radio_device_manifest.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -15302,6 +15734,18 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+}
+
+cc_prebuilt_binary {
+	name: "AgentTest",
+	owner: "realme",
+	srcs: ["proprietary/vendor/bin/AgentTest"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -15332,30 +15776,6 @@ cc_prebuilt_binary {
 	name: "autobt",
 	owner: "realme",
 	srcs: ["proprietary/vendor/bin/autobt"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "bip",
-	owner: "realme",
-	srcs: ["proprietary/vendor/bin/bip"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "ccci_fsd",
-	owner: "realme",
-	srcs: ["proprietary/vendor/bin/ccci_fsd"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -15754,6 +16174,19 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "vendor.mediatek.hardware.mmagent@1.1-service",
+	owner: "realme",
+	srcs: ["proprietary/vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "vendor.mediatek.hardware.mms@1.5-service",
 	owner: "realme",
 	srcs: ["proprietary/vendor/bin/hw/vendor.mediatek.hardware.mms@1.5-service"],
@@ -15929,6 +16362,18 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "mrdump_tool",
+	owner: "realme",
+	srcs: ["proprietary/vendor/bin/mrdump_tool"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "mtk_agpsd",
 	owner: "realme",
 	srcs: ["proprietary/vendor/bin/mtk_agpsd"],
@@ -15989,9 +16434,21 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "ppl_agent",
+	name: "rcs_volte_stack",
 	owner: "realme",
-	srcs: ["proprietary/vendor/bin/ppl_agent"],
+	srcs: ["proprietary/vendor/bin/rcs_volte_stack"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "rttv",
+	owner: "realme",
+	srcs: ["proprietary/vendor/bin/rttv"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -16073,6 +16530,18 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "volte_clientapi_ua",
+	owner: "realme",
+	srcs: ["proprietary/vendor/bin/volte_clientapi_ua"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "volte_imcb",
 	owner: "realme",
 	srcs: ["proprietary/vendor/bin/volte_imcb"],
@@ -16100,6 +16569,18 @@ cc_prebuilt_binary {
 	name: "volte_md_status",
 	owner: "realme",
 	srcs: ["proprietary/vendor/bin/volte_md_status"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "volte_rcs_ua",
+	owner: "realme",
+	srcs: ["proprietary/vendor/bin/volte_rcs_ua"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -16226,6 +16707,18 @@ cc_prebuilt_binary {
 	},
 	prefer: true,
 	relative_install_path: "hw",
+	device_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "mtkftm",
+	owner: "realme",
+	srcs: ["proprietary/odm/bin/mtkftm"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
 	device_specific: true,
 }
 
